@@ -63,3 +63,4 @@
         tarefasT.innerHTML = `Tarefas Pendentes (${itens.length})`;
         finalizadasT.innerHTML = `Tarefas Finalizadas (${finalizadas.length})`;
     }
+ 
