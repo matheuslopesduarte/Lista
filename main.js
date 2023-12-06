@@ -46,13 +46,9 @@
     }
     function AtualizaTabelas() {
         let r1 = '';
-        if(itens.length > 1){  
-            r1 = '<button id="conclui-todos" onclick="ConcluiTodos()">Excluir Todos</button>';
-            }
+        if(itens.length > 1){r1 = '<button id="conclui-todos" onclick="ConcluiTodos()">Concluir Todos</button>';}
         let r2 = '';
-        if(finalizadas.length > 1){  
-        r2 = '<button id="delete-todos" onclick="DeleteTodos()">Excluir Todos</button>';
-        }
+        if(finalizadas.length > 1){r2 = '<button id="delete-todos" onclick="DeleteTodos()">Excluir Todos</button>';}
         for (let index = 0; index < itens.length; index++) {
             r1 += `<li>${itens[index]}&nbsp;<button onclick='RemoveTarefa(${index})'>Concluir</button></li>`;}
         for (let index = 0; index < finalizadas.length; index++) {
