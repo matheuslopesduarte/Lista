@@ -19,14 +19,14 @@
             }
         }   
     }
-    function ConcluiTodos(){
-        if(confirm('Tem certeza que deseja concluir todos as tarefas?')){
-            for (let index = 0; index < itens.length; index++) {
+    function ConcluiTodos() {
+        if (confirm('Tem certeza que deseja concluir todas as tarefas?')) {
+            for (let index = itens.length - 1; index >= 0; index--) {
                 RemoveTarefa(index);
-            }         
+            }
             AtualizaTabelas();
         }
-    }
+    }    
     function DeleteTodos(){
         if(confirm('Tem certeza que deseja excluir todos as tarefas finalizadas?')){
             finalizadas = [];
