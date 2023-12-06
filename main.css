@@ -130,3 +130,18 @@ ul#tarefas li button:hover {
     border-radius: 5px;
     cursor: pointer;
 }
+#delete-todos:hover{
+    background-color: #c0392b;
+}
+
+#conclui-todos{
+    padding: 8px;
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+#conclui-todos:hover{
+    background-color: #45a049;
+}

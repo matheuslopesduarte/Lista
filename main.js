@@ -19,6 +19,15 @@
             }
         }   
     }
+    function ConcluiTodos(){
+        if(confirm('Tem certeza que deseja concluir todos as tarefas?')){
+            for (let index = 0; index < itens.length; index++) {
+                alert(itens[index]);
+                RemoveTarefa(index);
+            }         
+            AtualizaTabelas();
+        }
+    }
     function DeleteTodos(){
         if(confirm('Tem certeza que deseja excluir todos as tarefas finalizadas?')){
             finalizadas = [];
@@ -38,6 +47,9 @@
     }
     function AtualizaTabelas() {
         let r1 = '';
+        if(itens.length > 1){  
+            r1 = '<button id="conclui-todos" onclick="ConcluiTodos()">Excluir Todos</button>';
+            }
         let r2 = '';
         if(finalizadas.length > 1){  
         r2 = '<button id="delete-todos" onclick="DeleteTodos()">Excluir Todos</button>';
