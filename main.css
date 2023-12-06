@@ -67,7 +67,9 @@ li span {
     margin-right: 10px;
 }
 
-
+#tarefas {
+   text-align: center;    
+}
 
 #finalizadas {
     margin-top: 10px;
