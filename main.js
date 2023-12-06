@@ -22,7 +22,6 @@
     function ConcluiTodos(){
         if(confirm('Tem certeza que deseja concluir todos as tarefas?')){
             for (let index = 0; index < itens.length; index++) {
-                alert(itens[index]);
                 RemoveTarefa(index);
             }         
             AtualizaTabelas();
