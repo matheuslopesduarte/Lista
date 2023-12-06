@@ -17,8 +17,7 @@
             document.getElementById('descricao').value = '';
             AtualizaTabelas();
             }
-        }
-        
+        }   
     }
     function DeleteTodos(){
         if(confirm('Tem certeza que deseja excluir todos as tarefas finalizadas?')){
