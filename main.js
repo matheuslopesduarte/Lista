@@ -2,18 +2,18 @@
     const finalizadasDiv = document.getElementById('finalizadas');
     const tarefasT = document.getElementById('tarefasT');           
     const finalizadasT = document.getElementById('finalizadasT');
+    const descricao = document.getElementById('descricao')
     let itens = [];
     let finalizadas = [];
 
     function NewTarefa() {
-        let descricao = document.getElementById('descricao').value.trim();
-        if (descricao == '') {
+        if (descricao.value.trim() == '') {
             alert('A descrição não pode estar vazia');
         } else {
-            if(descricao.length > 75){
-                alert(`O maximo de caracteres é 75 (${descricao.length - 75} acima)`);
+            if(descricao.value.trim().length > 75){
+                alert(`O maximo de caracteres é 75 (${descricao.value.trim() - 75} acima)`);
             } else {
-            itens.push(descricao);
+            itens.push(descricao.value.trim());
             document.getElementById('descricao').value = '';
             AtualizaTabelas();
             }
@@ -58,3 +58,7 @@
         tarefasT.innerHTML = `Tarefas Pendentes (${itens.length})`;
         finalizadasT.innerHTML = `Tarefas Finalizadas (${finalizadas.length})`;
     }
+    descricao.addEventListener('keydown', function (event){
+        if(event.key == 'Enter'){NewTarefa()}
+        console.log(event.key);
+    })
