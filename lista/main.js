@@ -15,6 +15,7 @@
             } else {
             itens.push(descricao.value.trim());
             descricao.value = '';
+            descricao.focus();
             AtualizaTabelas();
             }
         }    
