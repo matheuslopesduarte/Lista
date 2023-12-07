@@ -15,10 +15,11 @@
             } else {
             itens.push(descricao.value.trim());
             descricao.value = '';
-            descricao.focus();
+            
             AtualizaTabelas();
             }
         }    
+        descricao.focus();
     }
     function RemoveTarefa(id) {
         finalizadas.push(itens[id]);
