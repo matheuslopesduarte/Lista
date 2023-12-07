@@ -10,8 +10,8 @@
         if (descricao.value.trim() == '') {
             alert('A descrição não pode estar vazia');
         } else {
-            if(descricao.value.trim().length > 75){
-                alert(`O maximo de caracteres é 75 (${descricao.value.trim() - 75} acima)`);
+            if(descricao.value.trim().length > 100){
+                alert(`O maximo de caracteres é 100 (${descricao.value.length - 100} acima)`);
             } else {
             itens.push(descricao.value.trim());
             descricao.value = '';
