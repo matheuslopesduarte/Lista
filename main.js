@@ -19,6 +19,17 @@
             }
         }   
     }
+    function RemoveTarefa(id) {
+        finalizadas.push(itens[id]);
+        itens.splice(id, 1);
+        AtualizaTabelas();
+    }
+    function RemoveFinalizada(id){
+        if(confirm('Deseja realmente excluir esta tarefa finalizada?')){
+        finalizadas.splice(id, 1);
+        AtualizaTabelas();
+        }
+    }
     function ConcluiTodos() {
         if (confirm('Tem certeza que deseja concluir todas as tarefas?')) {
             for (let index = itens.length - 1; index >= 0; index--) {
@@ -31,17 +42,6 @@
         if(confirm('Tem certeza que deseja excluir todos as tarefas finalizadas?')){
             finalizadas = [];
             AtualizaTabelas();
-        }
-    }
-    function RemoveTarefa(id) {
-        finalizadas.push(itens[id]);
-        itens.splice(id, 1);
-        AtualizaTabelas();
-    }
-    function RemoveFinalizada(id){
-        if(confirm('Deseja realmente excluir esta tarefa finalizada?')){
-        finalizadas.splice(id, 1);
-        AtualizaTabelas();
         }
     }
     function AtualizaTabelas() {
