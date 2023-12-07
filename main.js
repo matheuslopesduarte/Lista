@@ -14,7 +14,7 @@
                 alert(`O maximo de caracteres é 75 (${descricao.value.trim() - 75} acima)`);
             } else {
             itens.push(descricao.value.trim());
-            document.getElementById('descricao').value = '';
+            descricao.value = '';
             AtualizaTabelas();
             }
         }   
