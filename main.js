@@ -17,7 +17,7 @@
             descricao.value = '';
             AtualizaTabelas();
             }
-        }   
+        }    
     }
     function RemoveTarefa(id) {
         finalizadas.push(itens[id]);
