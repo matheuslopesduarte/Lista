@@ -1,0 +1,150 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+ 
+text{
+    font-size: 12px;
+}
+
+body {
+    background-color: #f4f4f4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 25px;
+    margin: 0;
+}
+
+input[type="text"] {
+    padding: 10px;
+    margin: 10px 0;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    max-width: 245px;
+}
+
+input[type="button"] {
+    padding: 10px;
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+input[type="button"]:hover {
+    background-color: #45a049;
+}
+
+h3 {
+    margin-top: 30px;
+    color: #333;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    min-width: 245px;
+    background-color: #fff;
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+li span {
+    margin-right: 10px;
+}
+
+#tarefas {
+    margin-top: 10px;
+   text-align: center;    
+}
+
+#finalizadas {
+    margin-top: 10px;
+    text-align: center;
+}
+
+li {
+    background-color: #fff;
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+li span {
+    margin-right: 10px;
+}
+
+ul#tarefas li button {
+    padding: 8px;
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+ul#finalizadas li button {
+    padding: 8px;
+    background-color: #e74c3c;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+ul#finalizadas li button:hover{
+    background-color: #c0392b;
+}
+ul > *{
+    line-break: anywhere;
+}
+button{
+    line-break: normal;
+}
+
+ul#tarefas li button:hover {
+    background-color: #45a049;
+}
+
+#delete-todos {
+    margin: auto;
+    padding: 8px;
+    background-color: #e74c3c;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+#delete-todos:hover{
+    background-color: #c0392b;
+}
+ 
+#conclui-todos{
+    padding: 8px;
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+#conclui-todos:hover{
+    background-color: #45a049;
+  }
